@@ -242,11 +242,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a7ac3f7ae6cd2ca43b8e1b598262abe4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  levelCountTextbox: {fileID: 0}
-  livesTextbox: {fileID: 0}
+  levelCountTextbox: {fileID: 779080183}
+  livesTextbox: {fileID: 657814198}
   healthTextbox: {fileID: 0}
-  scoreTextbox: {fileID: 0}
-  highScoreTextbox: {fileID: 0}
+  scoreTextbox: {fileID: 1601756602}
+  highScoreTextbox: {fileID: 1747092586}
   collectableCountTextbox: {fileID: 0}
   TimerTextbox: {fileID: 0}
   fastestTimeTextbox: {fileID: 0}
@@ -925,7 +925,7 @@ GameObject:
   - component: {fileID: 1747092587}
   - component: {fileID: 1747092586}
   m_Layer: 5
-  m_Name: Text (TMP)
+  m_Name: txt_BottomRight
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
