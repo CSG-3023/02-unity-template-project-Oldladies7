@@ -339,7 +339,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 553756673}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1876600964}
+        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
+        m_MethodName: OnGameExit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &553756673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -552,7 +564,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 946063865}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1876600964}
+        m_TargetAssemblyTypeName: MenuScript, Assembly-CSharp
+        m_MethodName: OnGameStart
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &946063865
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -924,6 +948,7 @@ GameObject:
   - component: {fileID: 1572550902}
   - component: {fileID: 1572550904}
   - component: {fileID: 1572550903}
+  - component: {fileID: 1572550905}
   m_Layer: 5
   m_Name: txt_Title
   m_TagString: Untagged
@@ -1047,6 +1072,24 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1572550901}
   m_CullTransparentMesh: 1
+--- !u!114 &1572550905
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1572550901}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75424e79e9e6b3c4fa618656a43ebeea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titleTextbox: {fileID: 0}
+  creditsTextbox: {fileID: 0}
+  copyrightTextbox: {fileID: 0}
+  mesageTextbox: {fileID: 1572550903}
+  VM1: {fileID: 1610481429}
+  VM2: {fileID: 1945082057}
 --- !u!1 &1610481427
 GameObject:
   m_ObjectHideFlags: 0
@@ -1193,6 +1236,7 @@ GameObject:
   - component: {fileID: 1876600962}
   - component: {fileID: 1876600961}
   - component: {fileID: 1876600960}
+  - component: {fileID: 1876600964}
   m_Layer: 5
   m_Name: MenuCanvas
   m_TagString: Untagged
@@ -1288,6 +1332,24 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &1876600964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1876600959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 75424e79e9e6b3c4fa618656a43ebeea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  titleTextbox: {fileID: 0}
+  creditsTextbox: {fileID: 0}
+  copyrightTextbox: {fileID: 0}
+  mesageTextbox: {fileID: 0}
+  VM1: {fileID: 0}
+  VM2: {fileID: 0}
 --- !u!1 &1945082055
 GameObject:
   m_ObjectHideFlags: 0
