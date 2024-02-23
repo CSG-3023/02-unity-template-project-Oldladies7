@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 36793430}
   - component: {fileID: 36793429}
   - component: {fileID: 36793428}
+  - component: {fileID: 36793432}
   m_Layer: 5
   m_Name: HUDCanvas
   m_TagString: Untagged
@@ -229,6 +230,26 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &36793432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 36793427}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a7ac3f7ae6cd2ca43b8e1b598262abe4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  levelCountTextbox: {fileID: 0}
+  livesTextbox: {fileID: 0}
+  healthTextbox: {fileID: 0}
+  scoreTextbox: {fileID: 0}
+  highScoreTextbox: {fileID: 0}
+  collectableCountTextbox: {fileID: 0}
+  TimerTextbox: {fileID: 0}
+  fastestTimeTextbox: {fileID: 0}
 --- !u!1 &138281330
 GameObject:
   m_ObjectHideFlags: 0
