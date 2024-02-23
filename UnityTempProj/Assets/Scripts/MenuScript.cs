@@ -11,6 +11,8 @@ using TMPro; //libraries for TextMeshPro components
 
 public class MenuScript : MonoBehaviour
 {
+    GameManager gm; //refernce to game manager
+
     [Header("Text Boxes")] 
     public TMP_Text titleTextbox;//textbox for the title
     public TMP_Text creditsTextbox; //textbox for the credits
@@ -23,17 +25,24 @@ public class MenuScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        gm = GameManager.GM; //refernce to game manager
         //set the value for textboxes
+        if (titleTextbox) { titleTextbox.text = gm.gameTitle; }
+        if (creditsTextbox) { creditsTextbox.text = gm.gameCredits; }
+        if (copyrightTextbox) { copyrightTextbox.text = gm.copyrightDate; }
+        if (mesageTextbox) { mesageTextbox.text = gm.endMsg; }
 
     }//end start()
 
     public void OnGameStart() 
     { 
         Debug.Log("Game Started");
+        gm.SetTargetState(GameState.gamePlaying);
     }//end OnGameStart()
 
     public void OnGameExit() 
     { 
-        Debug.Log("Exited Game"); 
+        Debug.Log("Exited Game");
+        gm.SetTargetState(GameState.gameExited);
     }//end OnGameExit()
 }
